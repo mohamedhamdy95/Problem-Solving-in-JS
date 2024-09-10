@@ -305,13 +305,35 @@
 // }
 // console.log(getMiddle('wdhud'))
 // ===============================================
-// (22)
-// ===============================================
+// (22)ناخد مجموعة حروف ونحولها لشكل معين
+// abce => A-Bb-Ccc-Dddd
 
+// function accum(s) {
+//     return s.toLowerCase().split('').map((letter, i) => letter.toUpperCase() + letter.repeat(i)).join('-')
+// }
+// console.log(accum('sevfgtWEqscG'))
 // ===============================================
-
+// (23) لو رقم ليه جزر تريعي رجع true
+// لو ملوش رجع false
+// function isSquare(num) {
+//     return Number.isInteger(Math.sqrt(num))
+// }
+// console.log(isSquare(25))
+// Math.sqrt(num) => بتجيب الجزر التربيعى للرقم الى محدده
+// Number.isInteger => بترجع true or false
 // ===============================================
-
+// (24) تاخد array من الحروف والارقام وترجع ارقام بس
+// function filterList(arr) {
+//     return arr.filter((ele) => typeof ele !== 'string')
+// }
+// console.log(filterList([1, 4, 'e', 6, 'a', 2]))
+//     (4)[1, 4, 6, 2]
+// ===============================================
+// (25) بتاخد مجموعة من الحروف وترجع true لو مفيش اى حرف متكرر
+function isIsograme(str) {
+    return new Set(str.toLowerCase().split('')).size === str.length;
+}
+console.log(isIsograme('abcsade'))
 // ===============================================
 
 // ===============================================
